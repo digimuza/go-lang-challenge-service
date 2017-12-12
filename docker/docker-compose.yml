@@ -1,0 +1,10 @@
+version: "2"
+services:
+  app:
+    build: 
+      context: ../
+      dockerfile: docker/Dockerfile
+    volumes: 
+      - ../:/go/src/github.com/digimuza/go-lang-challenge-service
+    ports: 
+      - 3000:3000
